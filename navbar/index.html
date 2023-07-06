@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./iconproject.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Nav Bar</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="page-img-div">
+                <img class="page-logo" src="./Presentation1.jpg" alt="logo"/>
+            </div>
+            <input type="checkbox" id="check"/>
+            <label for="check" class="check-ham" onclick="ischecked()"><i class="fas fa-bars"></i></label>
+            <div class="nav-items">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">References</a></li>
+                </ul>
+            </div>
+        
+        </nav>
+    </header>
+    <script>
+        function ischecked(){
+            let checkItem = document.getElementById('check')
+            // let flag = checkItem.checked;
+            console.log(checkItem.checked)
+        }
+        let item = document.getElementById("check")
+        item.addEventListener("change",()=>ischecked)
+        // console.log(item)
+    </script>
+</body>
+</html>
