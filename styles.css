@@ -1,0 +1,148 @@
+body{
+    background-color: lightgray;
+    padding: 60px;
+}
+
+.payment-card{
+    /* height: 200%; */
+    background-color: white;
+    border-radius: 20px;
+    padding: 0px;
+    margin-right: 40px;
+}
+
+.more{
+    padding: 20px;
+    background-color: rgb(240, 239, 239);
+}
+
+.number{
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+    margin:15px 0;
+}
+
+.card-payment{
+    position: relative;
+}
+
+
+.payment-btn{
+    padding: 9px 50px;
+    border-radius: 15px;
+    background-color: rgb(101, 101, 199);
+    color: white;
+}
+
+.expiration,
+.cvv{
+    width: 100%;
+    padding: 5px;
+    background-color:  rgb(240, 239, 239);
+    border:none;
+    margin-bottom: 15px;
+}
+
+.cvv{
+    margin-left: 15px;
+}
+
+/* .tick-mark span{
+    color: white;
+    display: inline-block;
+} */
+
+.item-details{
+    
+}
+
+.invoice{
+    border-radius: 20px;
+    padding:20px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+    /* padding: 0; */
+    height: fit-content;
+}
+
+.success-tick{
+    margin: auto;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px 6px 10px 5px;
+    
+}
+
+.hide-success{
+    position: absolute;
+    left: 43%;
+    padding: 40px 20px;
+    background-color: #28a745;
+    border-radius: 20px;
+    width: 250px;
+    height: 200px;
+    top: 37%;
+    text-align: center;
+    color: white;
+    z-index: -1;
+    display: none;
+}
+
+#success-card.success{
+    
+    transition: opacity 0.3s ease;
+    display:block;
+    
+}
+
+@media  (min-width:500px) {
+    #success-card.success{
+        top: 31%;
+        left: 72%;
+        width: 26%;
+        transition: opacity 0.3s ease;
+        display:block;
+        
+    }
+    
+}
+
+@media (max-width: 770px) {
+
+    #success-card.success{
+        top: 31%;
+        left: 45%;
+        width: 40%;
+        transition: opacity 0.3s ease;
+        display:block;
+        
+    }
+}
+
+@media (min-width: 770px) and (max-width: 990px) {
+
+    #success-card.success{
+        top: 31%;
+        left: 59%;
+        transition: opacity 0.3s ease;
+        display:block;
+        
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1500px) {
+
+    #success-card.success{
+        width: 250px;
+        height: 200px;
+        top: 47%;
+        left: 43%;
+        transition: opacity 0.3s ease;
+        display:block;
+        
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Payment Form Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row items-detail">
+            <form id="formSubmit" class="col-lg-5 col-sm-6 col-md-8 payment-card" onsubmit="showSuccess()">
+                <div style="padding: 20px;">
+                    <h4>Payment</h4>
+                    <span>Complete your pro membership</span>
+                </div>
+                <br>
+                <div class="more">
+                    <h4>
+                        &#36; 899 USD
+                    </h4>
+                    <hr>
+                    <div class="details">
+                        <div class="tick-mark row">
+                            <span class="col-6" style="font-size: xx-small;">&#10004; &nbsp; Messaging</span>
+                            <span class="col-6" style="font-size: xx-small;">&#10004; &nbsp; Analytics</span>
+                            <span class="col-6" style="font-size: xx-small;">&#10004; &nbsp; Support</span>
+                            <span class="col-6" style="font-size: xx-small;">&#10004; &nbsp; Discount</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <a href=""><span>Know more</span></a>
+                    </div>
+                </div>
+                <div class="card-payment" style="padding: 20px;">
+                    <div>
+                        <h6>Pay with card</h6>
+                    <input name="card-number" 
+                        class="number" 
+                        id="card-number" 
+                        type="text" 
+                        maxlength="19" 
+                        placeholder="1234 5678 9123 4567"
+                        required
+                        onkeypress="return event.charCode >= 48 && event.charCode <=57"/>
+                    <div class="d-flex card-details">
+                        <input 
+                            name="expiration-date" 
+                            class="expiration" 
+                            id="expiration-date" 
+                            type="text" 
+                            maxlength="5" 
+                            placeholder="03/25"
+                            required
+                            onkeypress="return event.charCode >= 48 && event.charCode <=57"/>
+                        <input 
+                            name="card-cvv" 
+                            class="cvv" 
+                            id="card-cvv" 
+                            type="text" 
+                            maxlength="4" 
+                            placeholder="1234"
+                            required
+                            onkeypress="return event.charCode >= 48 && event.charCode <=57"/>
+                    </div>
+                    <div>
+                        <input class="payment-btn" type="submit" id="payment" value="Make Payment"/>
+                    </div>
+                    </div>
+                    
+                </div>
+            </form>
+            <div id="success-card" class="hide-success">
+                <div class="success-tick">
+                    &#10004;
+                </div>
+                <div>
+                    <h4>Success</h4>
+                </div>
+                <p>Your Payment was processed</p>
+            </div>
+            
+            
+            <div class="col-lg-6 col-sm-9 col-md-6 invoice">
+                <div class="" style="padding: 20px;">
+                    <h3 style="float: left;">Invoice</h3>
+                    <a style="float: right;" href="">Download</a>
+                </div>
+                <br>
+                <div class="more">
+                    <div class="tick-mark row">
+                        <span class="col-6" style="font-size: small;">Pro Membership</span>
+                        <span class="col-6" style="font-size: small;">$ 899</span>
+                        
+                    </div>
+                    <hr>
+                    <div class="details">
+                        <div class="tick-mark row">
+                            <span class="col-6" style="font-size: small;">Platform Fee</span>
+                            <span class="col-6" style="font-size: small;">$ 10</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="" style="padding: 20px;">
+                    <h5 style="float: left;">Total Amount</h5>
+                    <span style="float: right;" href="">$ 909</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById('formSubmit').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const result = document.getElementById('success-card')
+    setTimeout(function() {
+        result.classList.add('success')
+    }, 1000); // Show the message for 2 seconds (adjust as needed)
+    });
+</script>
+</html>
