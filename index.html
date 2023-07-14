@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="./styles.css">
+        <style>
+            body{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                padding: 10px;
+            }
+        </style>
+        <title>Products</title>
+    </head>
+
+    <body class="size">
+        <h1 style="color: darkred;">Furnitures</h1>
+        <p style="font-size: large;">
+            Furnitures made of pristine wood <br>
+            Results : <br>
+            Price and other details may vary based on product size and colour.
+        </p>
+        <div class="main">
+            <div class="cards-container">
+                <div class="card back-hover" id="card-1">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <button
+                                style="float:left; background-color: lightgreen; padding: 7px; border-radius: 3px;">82%</button>
+                            <i style="margin-left: 210px;" class="fa-solid fa-eye"></i>
+                        </div>
+                        <div class="card-img">
+                            <img src="./images/sofacumcouch.jpg" alt="sofa-couch" width="300px" height="200px" />
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h5>Sofa cum Couch</h1>
+                            <h6 class="hover-before" style="color: gray;">19838478378</h6>
+                            <div class="hover-after">
+                                <span style="float: left; padding-left: 15px;" id="no-of-views">10 views</span>
+                                <span style="float: right; padding-right: 15px;" id="product-details"><button onclick="displayPop()">
+                                    Details
+                                </button></span>
+                            </div>
+                    </div>
+
+                </div>
+
+                <div class="card back-hover" id="card-2">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <button
+                                style="float:left; background-color: rgb(216, 171, 25); padding: 7px; border-radius: 3px;">30%</button>
+                            <i style="margin-left: 210px;" class="fa-solid fa-eye"></i>
+                        </div>
+                        <div class="card-img">
+                            <img src="./images/sheeshamdoublebed.jpg" alt="double-bed" width="300px" height="200px" />
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h5>Sofa cum Couch</h1>
+                            <h6 class="hover-before" style="color: gray;">19838478378</h6>
+                            <div class="hover-after">
+                                <span style="float: left; padding-left: 15px;" id="no-of-views">20 views</span>
+                                <span style="float: right; padding-right: 15px;" id="product-details"><button onclick="displayPop()">
+                                        Details
+                                    </button></span>
+                            </div>
+                    </div>
+
+                </div>
+
+                <div class="card back-hover" id="card-3">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <button
+                                style="float:left; background-color: lightgreen; padding: 7px; border-radius: 3px;">70%</button>
+                            <i style="margin-left: 210px;" class="fa-solid fa-eye"></i>
+                        </div>
+                        <div class="card-img">
+                            <img src="./images/seatersofa.jpg" alt="sofa-seater" width="300px" height="200px" />
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h5>Sofa cum Couch</h1>
+                            <h6 class="hover-before" style="color: gray;">19838478378</h6>
+                            <div class="hover-after">
+                                <span style="float: left; padding-left: 15px;" id="no-of-views">40 views</span>
+                                <span style="float: right; padding-right: 15px;" id="product-details"><button onclick="displayPop()">
+                                        Details
+                                    </button></span>
+                            </div>
+                    </div>
+
+                </div>
+
+                <div class="card back-hover" id="card-4">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <button
+                                style="float:left; background-color: rgb(235, 149, 20); padding: 7px; border-radius: 3px;">58%</button>
+                            <i style="margin-left: 210px;" class="fa-solid fa-eye"></i>
+                        </div>
+                        <div class="card-img">
+                            <img src="./images/hangingswing.jpg" alt="swing-chair" width="300px" height="200px" />
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h5>Sofa cum Couch</h1>
+                            <h6 class="hover-before" style="color: gray;">19838478378</h6>
+                            <div class="hover-after">
+                                <span style="float: left; padding-left: 15px;" id="no-of-views">80 views</span>
+                                <span style="float: right; padding-right: 15px;" id="product-details"><button onclick="displayPop()">
+                                        Details
+                                    </button></span>
+                            </div>
+                    </div>
+
+                </div>
+
+                <div class="card back-hover" id="card-5">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <button
+                                style="float:left; background-color: lightgreen; padding: 7px; border-radius: 3px;">82%</button>
+                            <i style="margin-left: 210px;" class="fa-solid fa-eye"></i>
+                        </div>
+                        <div class="card-img">
+                            <img src="./images/antiquewoodenfoldable.jpg" alt="foldable-table" width="300px" height="200px" />
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h5>Sofa cum Couch</h1>
+                            <h6 class="hover-before" style="color: gray;">19838478378</h6>
+                            <div class="hover-after">
+                                <span style="float: left; padding-left: 15px;" id="no-of-views">50 views</span>
+                                <span style="float: right; padding-right: 15px;" id="product-details"><button onclick="displayPop()">
+                                        Details
+                                    </button></span>
+                            </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+    <script>
+
+    </script>
+
+
+</html>
