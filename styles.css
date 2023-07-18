@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+}
+
+body{
+    margin: auto;
+    background-color: lightblue;
+    
+}
+
+.container{
+    /* display: flex;
+    flex-direction: column; */
+    width: 90vw;
+    min-height: 60vh;
+    border: 1px solid black;
+}
+/* .inputcls{
+    margin: auto;
+
+    display: inline-block;
+}*/
+
+.input-field{
+    display: block;
+    width: auto;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+
+
+td,th{
+    width: 40%;
+    padding: 5px;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    border-right: none;
+    border-left: none;
+}
+
+thead{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+tr:nth-child(even){
+    background-color: lightcyan;
+}

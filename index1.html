@@ -1,0 +1,68 @@
+<input type="text" id="filterInput" placeholder="Enter a value...">
+<select id="filterOptions">
+  <option value="all">All</option>
+  <option value="name">Name</option>
+  <option value="category">Category</option>
+  <option value="price">Price</option>
+</select>
+
+<table id="myTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Product A</td>
+      <td>Category 1</td>
+      <td>$10</td>
+    </tr>
+    <tr>
+      <td>Product B</td>
+      <td>Category 2</td>
+      <td>$15</td>
+    </tr>
+    <!-- More table rows... -->
+  </tbody>
+</table>
+
+<script>
+  const filterInput = document.getElementById("filterInput");
+  const filterOptions = document.getElementById("filterOptions");
+  const table = document.getElementById("myTable");
+
+  filterInput.addEventListener("input", applyFilters);
+  filterOptions.addEventListener("change", applyFilters);
+
+  function applyFilters() {
+    const searchValue = filterInput.value.toLowerCase();
+    const filterOption = filterOptions.value;
+    const rows = table.getElementsByTagName("tr");
+
+    for (let i = 1; i < rows.length; i++) {
+      const cells = rows[i].getElementsByTagName("td");
+      let rowMatchesSearch = false;
+
+      if (filterOption === "all") {
+        for (let j = 0; j < cells.length; j++) {
+          const cellValue = cells[j].textContent.toLowerCase();
+          if (cellValue.indexOf(searchValue) > -1) {
+            rowMatchesSearch = true;
+            break;
+          }
+        }
+      } else {
+        const columnIndex = Array.from(rows[0].getElementsByTagName("th")).findIndex(th => th.textContent === filterOption);
+        const cellValue = cells[columnIndex].textContent.toLowerCase();
+        if (cellValue.indexOf(searchValue) > -1) {
+          rowMatchesSearch = true;
+        }
+      }
+
+      rows[i].style.display = rowMatchesSearch ? "" : "none";
+    }
+  }
+</script>
