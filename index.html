@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Location with Zipcode</title>
+</head>
+<body>
+    <div class="container">
+        <input class="input-field" id="zip-code" placeholder="search ZIP code . . . &#128269;" minlength="5" maxlength="6"/>
+        <button id="search-Btn">Search</button>
+        <div class="location-content">
+            <ol id="resultsList">
+                <li id="country">Country: &nbsp;</li>
+                <li id="state">State: &nbsp;</li>
+                <li id="lat">Lattitude: &nbsp;</li>
+                <li id="long">Longitude: &nbsp;</li>
+                <li id="place">Place: &nbsp;</li>
+
+            </ol>
+
+        </div>
+    
+    </div>
+    <script defer src="./script.js"></script>
+</body>
+</html>

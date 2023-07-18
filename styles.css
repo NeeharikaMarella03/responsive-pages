@@ -1,0 +1,40 @@
+/* *{
+    margin: 0;
+} */
+
+body{
+    background-color: lightblue;
+    
+}
+
+.container{
+    margin: auto;
+
+    /* display: flex;
+    flex-direction: column; */
+    width: 90vw;
+    min-height: 60vh;
+    border: 1px solid black;
+}
+/* .inputcls{
+    margin: auto;
+
+    display: inline-block;
+}*/
+
+.input-field,
+button{
+    display: block;
+    width: auto;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+
+.location-content{
+    margin: auto;
+    background-color: whitesmoke;
+    width: 40%;
+    height: auto;
+    border: 1px solid gray;
+}
