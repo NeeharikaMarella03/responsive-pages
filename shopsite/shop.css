@@ -112,6 +112,7 @@ header,
     /* position: relative; */
     width: 100%;
     height: 550px;
+    opacity: 0.9
 }
 
 .home-txt {
@@ -168,7 +169,7 @@ h1 {
     content: "";
     position: absolute;
     top: 0;
-    left: 0%;
+    left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.871);
@@ -381,7 +382,64 @@ span {
     width: 200px;
 }
 
-.form-txt h3 {}
+/* footer section */
+
+footer {
+    background-color: rgb(42, 81, 153);
+}
+
+.footer-sec {
+    width: 80%;
+    padding: 60px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+
+}
+
+.footer-sec h2 {
+    text-align: left;
+}
+
+.footer-card {
+    color: white;
+    flex: 1 1 auto;
+    max-width: 250px;
+}
+
+.footer-card ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-sec p {
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-card input {
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.copyright,
+h3 {
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
 
 @media screen and (max-width: 649px) {
 
