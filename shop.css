@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* signin-up section*/
+
+
+body {
+    overflow-x: hidden;
+}
+
+.nav1 {
+    padding: 10px;
+    background-color: #376ea8;
+    /* color: white; */
+}
+
+.nav1 p {
+    display: inline;
+    /* vertical-align: baseline; */
+}
+
+
+
+.nav1 ul {
+    float: right;
+    /* display: flex; */
+    padding: 0 10px
+}
+
+ul {
+    display: flex;
+    padding: 0 15px;
+    gap: 30px;
+    cursor: pointer;
+    list-style: none;
+
+}
+
+.signin-up a:hover {
+    color: #82aedd;
+    transform: scale(1.5);
+}
+
+/* nav items section */
+
+nav {
+    opacity: 0.95;
+}
+
+header,
+.items-nav {
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 20px;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 100;
+}
+
+.main-nav h1 {
+    display: inline;
+}
+
+.main-nav .nav-items {
+    float: right;
+    padding: 5px;
+    /* font-weight: 500; */
+    font-style: oblique;
+}
+
+.main-nav ul a {
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.main-nav ul a:after {
+    content: "";
+    position: absolute;
+    background: #376ea8;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.main-nav ul a:hover:after {
+    width: 100%;
+}
+
+
+.check-ham {
+    display: none;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+/* home section  */
+.home-sec {}
+
+.home-img {
+    background-position: center;
+    /* position: relative; */
+    width: 100%;
+    height: 550px;
+}
+
+.home-txt {
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    color: violet;
+}
+
+.home-txt h4 {
+    color: rgb(236, 122, 156);
+}
+
+.home-txt h1 {
+    letter-spacing: 0.5em;
+    font-size: 2em;
+    color: rgba(82, 167, 159, 0.932);
+}
+
+.home-txt button {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* items-cards */
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    flex: 1 1 auto;
+    max-width: 300px;
+    position: relative;
+    box-shadow: 25px 25px 30px rgba(72, 73, 75, 0.15);
+
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.871);
+    z-index: 2;
+    opacity: 0;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+.items {
+    margin: 80px;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    /* align-items: center;
+    justify-items: center; */
+}
+
+.card .content {
+    position: absolute;
+    /* left: 100px;
+    top: 200px */
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    z-index: 3;
+    opacity: 0;
+}
+
+.card:hover .content {
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    top: 50%;
+}
+
+.btn {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* card items */
+
+.items1 {
+    gap: 0;
+}
+
+.card-item {
+    width: 250px;
+    height: 300px;
+    background-position: center;
+    flex: 1 1 auto;
+    max-width: 250px;
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 4px 2px rgba(72, 73, 75, 0.15);
+
+}
+
+.card-item .item {
+    margin-bottom: 20px;
+}
+
+.item-content span,
+p {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.btn-items {
+    background-color: #376ea8;
+    border-radius: 20px;
+    border-style: none;
+}
+
+
+@media screen and (max-width: 559px) {
+
+    /* ham nav section */
+    .nav1,
+    .main-nav h1 {
+        display: none;
+    }
+
+
+    .check-ham {
+        display: block;
+    }
+
+    .nav-items ul {
+        position: absolute;
+        display: block;
+        padding-left: 0px;
+        width: 100vw;
+        height: 100vh;
+        /* background-color: rgb(84, 204, 168); */
+        /* top: 15vh; */
+        left: -120vw;
+        text-align: center;
+        transition: all 0.5s ease-out;
+        background-color: white;
+
+    }
+
+    li {
+        padding: 20px 0px;
+    }
+
+    li a:hover {
+        /* background-color: rgb(103, 200, 218); */
+        color: rgb(21, 141, 150);
+        cursor: pointer;
+        transition: ease;
+        padding: 10px;
+        border-radius: 3px;
+    }
+
+    #check:checked~.nav-items ul {
+        left: -5vw;
+    }
+
+
+}
