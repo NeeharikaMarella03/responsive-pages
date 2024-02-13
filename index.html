@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./shopsite/shop.css">
+    <!-- <style>
+        .before-example::before {
+            content: "Before content: ";
+            color: red;
+            font-weight: bold;
+        }
+    </style> -->
+    <title>Shopping Site</title>
+</head>
+
+<body>
+    <nav class="nav1">
+        <p>Free Shipping, 30-day return or refund guarantee.</p>
+        <ul class="signin-up">
+            <a>Sign in</a>
+            <a>Sign up</a>
+        </ul>
+    </nav>
+    <header>
+        <nav class="items-nav">
+            <div class="main-nav">
+                <h1 class="head-style">Fashion Shop.</h1>
+                <input type="checkbox" id="check" />
+                <label for="check" class="check-ham" onclick="ischecked()"><i class="fas fa-bars"></i></label>
+                <div class="nav-items">
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home-sec" class="home-sec">
+            <img src="./shopsite/imgs/shoppingimg.jpg" alt="home-bg-img" class="home-img" />
+            <div class="home-txt">
+                <h3>SUMMER COLLECTION</h3>
+                <h1>FALL - WINTER COLLECTION 2023</h1>
+                <P>A specialist label creating luxury essentials Ethically crafted with an unwavering commitment to
+                    exceptional quality</P>
+                <div>
+                    <button class="btn-1">SHOP NOW</button>
+                </div>
+            </div>
+            <div class="items">
+                <div>
+                    <div class="card">
+                        <img src="./shopsite/imgs/doll.jpg" alt="doll-img" />
+                        <div class="content">
+                            <p>Toys</p>
+                            <div>
+                                <button class="btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <img src="./shopsite/imgs/earrings.jpg" alt="earrings-img" />
+                        <div class="content">
+                            <p>Accessories</p>
+                            <div>
+                                <button class="btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <img src="./shopsite/imgs/kurti.jpg" alt="kurti-img" />
+                        <div class="content">
+                            <p>Dress wear</p>
+                            <div>
+                                <button class="btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <img src="./shopsite/imgs/sandals.jpg" alt="sandals-img" />
+                        <div class="content">
+                            <p>Foot wear</p>
+                            <div>
+                                <button class="btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="cart-items1">
+            <h1 class="head-style">Top Sales</h1>
+            <div class="items items1">
+                <div class="card-item">
+                    <div class="item">
+                        <img src="./shopsite/imgs/sandals.jpg" alt="sandals-img" />
+                    </div>
+                    <div class="item-content">
+                        <p>Foot wear</p>
+                        <span>$ 25.7</span>
+                        <div>
+                            <button class="btn btn-items">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="item">
+                        <img src="./shopsite/imgs/sandals.jpg" alt="sandals-img" />
+                    </div>
+                    <div class="item-content">
+                        <p>Foot wear</p>
+                        <span>$ 25.7</span>
+                        <div>
+                            <button class="btn btn-items">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="item">
+                        <img src="./shopsite/imgs/sandals.jpg" alt="sandals-img" />
+                    </div>
+                    <div class="item-content">
+                        <p>Foot wear</p>
+                        <span>$ 25.7</span>
+                        <div>
+                            <button class="btn btn-items">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="item">
+                        <img src="./shopsite/imgs/sandals.jpg" alt="sandals-img" />
+                    </div>
+                    <div class="item-content">
+                        <p>Foot wear</p>
+                        <span>$ 25.7</span>
+                        <div>
+                            <button class="btn btn-items">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cart-items2">
+            <h1 class="head-style">New Arrivals</h1>
+            <div class="items items1">
+                <div class="card-item">
+                    <div class="item">
+                        <img src="./shopsite/imgs/sandals.jpg" alt="sandals-img" />
+                    </div>
+                    <div class="item-content">
+                        <p>Foot wear</p>
+                        <span>$ 25.7</span>
+                        <div>
+                            <button class="btn btn-items">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="item">
+                        <img src="./shopsite/imgs/sandals.jpg" alt="sandals-img" />
+                    </div>
+                    <div class="item-content">
+                        <p>Foot wear</p>
+                        <span>$ 25.7</span>
+                        <div>
+                            <button class="btn btn-items">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="item">
+                        <img src="./shopsite/imgs/sandals.jpg" alt="sandals-img" />
+                    </div>
+                    <div class="item-content">
+                        <p>Foot wear</p>
+                        <span>$ 25.7</span>
+                        <div>
+                            <button class="btn btn-items">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="item">
+                        <img src="./shopsite/imgs/sandals.jpg" alt="sandals-img" />
+                    </div>
+                    <div class="item-content">
+                        <p>Foot wear</p>
+                        <span>$ 25.7</span>
+                        <div>
+                            <button class="btn btn-items">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cart-items3">
+            <h1 class="head-style">Hot Sales</h1>
+            <div class="items items1">
+                <div class="card-item">
+                    <div class="item">
+                        <img src="./shopsite/imgs/sandals.jpg" alt="sandals-img" />
+                    </div>
+                    <div class="item-content">
+                        <p>Foot wear</p>
+                        <span>$ 25.7</span>
+                        <div>
+                            <button class="btn btn-items">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="item">
+                        <img src="./shopsite/imgs/sandals.jpg" alt="sandals-img" />
+                    </div>
+                    <div class="item-content">
+                        <p>Foot wear</p>
+                        <span>$ 25.7</span>
+                        <div>
+                            <button class="btn btn-items">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="item">
+                        <img src="./shopsite/imgs/sandals.jpg" alt="sandals-img" />
+                    </div>
+                    <div class="item-content">
+                        <p>Foot wear</p>
+                        <span>$ 25.7</span>
+                        <div>
+                            <button class="btn btn-items">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="item">
+                        <img src="./shopsite/imgs/sandals.jpg" alt="sandals-img" />
+                    </div>
+                    <div class="item-content">
+                        <p>Foot wear</p>
+                        <span>$ 25.7</span>
+                        <div>
+                            <button class="btn btn-items">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog-sec">
+            <div class="blog-head">
+                <h3>Latest News</h3>
+                <h2>Fashion New Trends</h2>
+            </div>
+            <div class="blog-news">
+                <div class="blog">
+                    <img src="./shopsite/imgs/places.jpg" />
+                    <div class="blog-cont">
+                        <h6>08 February 2024</h6>
+                        <p>Wandering happy places feels home</p>
+                        <h3>read more</h3>
+                    </div>
+                </div>
+                <div class="blog">
+                    <img src="./shopsite/imgs/places.jpg" />
+                    <div class="blog-cont">
+                        <h6>08 February 2024</h6>
+                        <p>Wandering happy places feels home</p>
+                        <h3>read more</h3>
+                    </div>
+                </div>
+                <div class="blog">
+                    <img src="./shopsite/imgs/places.jpg" />
+                    <div class="blog-cont">
+                        <h6>08 February 2024</h6>
+                        <p>Wandering happy places feels home</p>
+                        <h3>read more</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact-sec">
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61812.525976477475!2d78.78834339540032!3d14.468439527960133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb37210d4f26f87%3A0xaf158859a18a02a0!2sKadapa%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1707376206943!5m2!1sen!2sin"
+                    height="500" width="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-form">
+                <form action="/" method="POST">
+                    <h3>INFORMATION</h3>
+                    <div class="form">
+                        <div class="form-flex form-txt">
+
+                            <h1>Contact Us</h1>
+                            <span>As you might expect of a company that began as a high-end interiors contractor, we pay
+                                strict
+                                attention.</span>
+                            <h3>USA</h3>
+                            <p>195 E Parker Square Dr, Parker, CO 801<br>+43 982-314-0958</p>
+                            <h3>India</h3>
+                            <p>HW95+C9C, Lorem ipsum dolor sit.<br>411014</p>
+                        </div>
+                        <div class="form-flex form-details">
+                            <input type="text" name="name" id="name" placeholder="Name" required="">
+                            <input type="email" name="email" id="email" placeholder="Email" required="">
+                            <textarea name="message" id="message" cols="52" rows="7" placeholder="Message"
+                                required=""></textarea>
+                            <button class="btn-1 btn-form">SEND MESSAGE</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-sec">
+            <div class="footer-card">
+                <h2>Fashion Shop</h2>
+                <p>The customer is at the heart of our
+                    unique business model, which includes
+                    design.</p>
+                <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards">
+            </div>
+            <div class="footer-card">
+                <h2>Shopping</h2>
+                <ul>
+                    <a href="">Clothing Store</a>
+                    <a href="">Trending footwear</a>
+                    <a href="">Accessories</a>
+                    <a href="">Sale</a>
+                </ul>
+            </div>
+            <div class="footer-card">
+                <h2>News Letter</h2>
+                <p>Be the first to know about new
+                    arrivals, look books, sales & promos!
+                </p>
+                <input type="email" placeholder="Email" />
+            </div>
+        </div>
+        <div class="copyright">
+            <h3>Copyright &copy; 2024 Design By Neeharika</h3>
+        </div>
+    </footer>
+    <script>
+        function ischecked() {
+            let checkItem = document.getElementById('check')
+            // let flag = checkItem.checked;
+            console.log(checkItem.checked)
+        }
+        let item = document.getElementById("check")
+        item.addEventListener("change", () => ischecked)
+        // console.log(item)
+    </script>
+</body>
+
+</html>
